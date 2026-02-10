@@ -3,626 +3,884 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Portfólio Dalton Guimarães</title>
-    <!-- Favicon-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfólio de Dalton Guimarães - Desenvolvedor Full Stack" />
+    <meta name="author" content="Dalton Guimarães" />
+    <meta name="theme-color" content="#0f0f23" />
+    <title>Dalton Guimarães | Full Stack Developer</title>
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Font Awesome 6.5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous" />
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#page-top">Dalton Guimarães</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-                Menu
+            <a class="navbar-brand fw-bold" href="#page-top">
+                <span class="text-accent">&lt;</span>DG<span class="text-accent">/&gt;</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1 dropdown">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" data-bs-toggle="dropdown">
-                            Projetos
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-dark py-3 px-0 px-lg-3 rounded"
-                            aria-labelledby="navbarDropdownMenuLink">
-                            <a class="nav-link dropdown-item disabled"><i class="fa-solid fa-microchip"></i>
-                                Tecnologias</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="nav-link dropdown-item" href="#c#">C#</a>
-                            <a class="nav-link dropdown-item" href="#ReactNative">React Native</a>
-                            <a class="nav-link dropdown-item" href="#Web">WEB</a>
-                        </div>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#about">Sobre</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#formacao">Formação</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#contato">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#org-projects">Organizações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencias">Experiências</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Avatar Image-->
-            <img class="masthead-avatar mb-5 rounded-circle"
-                src="https://avatars.githubusercontent.com/u/83316074?s=400&u=277e27df1af7dd9fcc0c8464dc7a916bd30b71b6&v=4"
-                alt="..." />
-            <!-- Masthead Heading-->
-            <h1 class="masthead-heading text-uppercase mb-0">Dalton Guimarães</h1>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fa-brands fa-jedi-order"></i></div>
-                <div class="divider-custom-line"></div>
+
+    <!-- Hero Section -->
+    <header class="hero-section" id="hero">
+        <div class="hero-bg-animation"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1000">
+                    <p class="hero-greeting text-accent mb-2">Olá, eu sou</p>
+                    <h1 class="hero-title display-3 fw-800 mb-3">Dalton<br />Guimarães</h1>
+                    <div class="hero-typing mb-4">
+                        <span class="typing-prefix text-muted">~/</span>
+                        <span class="typing-text" id="typingText"></span>
+                        <span class="typing-cursor">|</span>
+                    </div>
+                    <p class="hero-description text-muted lead mb-4">
+                        Desenvolvedor Full Stack apaixonado por criar soluções digitais
+                        inovadoras com tecnologias modernas.
+                    </p>
+                    <div class="hero-buttons d-flex gap-3 flex-wrap">
+                        <a href="#portfolio" class="btn btn-accent btn-lg px-4">
+                            <i class="fas fa-code me-2"></i>Meus Projetos
+                        </a>
+                        <a href="#contato" class="btn btn-outline-light btn-lg px-4">
+                            <i class="fas fa-envelope me-2"></i>Contato
+                        </a>
+                    </div>
+                    <div class="hero-social mt-4 d-flex gap-3">
+                        <a href="https://github.com/DaltonGuima" target="_blank" rel="noopener" class="social-icon"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dalton-joaquim-soares-guimar%C3%A3es-13a897231/"
+                            target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:dalton.guimaraes500@gmail.com" class="social-icon" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="hero-avatar-wrapper">
+                        <img class="hero-avatar"
+                            src="https://avatars.githubusercontent.com/u/83316074?s=400&u=277e27df1af7dd9fcc0c8464dc7a916bd30b71b6&v=4"
+                            alt="Dalton Guimarães" />
+                    </div>
+                </div>
             </div>
-            <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0 font-weight-bold">Dev | Programador, atualmente aluno
-                da Fatec Zona Leste.</p>
         </div>
     </header>
-    <!-- Portfolio Section-->
-    <section class="page-section portfolio" id="portfolio">
+
+    <!-- About Section -->
+    <section class="section-padding" id="about">
         <div class="container">
-            <!-- Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Projetos</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fa-brands fa-jedi-order"></i></div>
-                <div class="divider-custom-line"></div>
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-label text-accent"><i class="fas fa-user me-2"></i>Sobre Mim</span>
+                <h2 class="section-title display-5 fw-bold mt-2">Quem sou eu</h2>
+                <div class="section-divider mx-auto"></div>
             </div>
-            <h3 class="page-section text-center text-uppercase text-secondary mb-0" id="c#">
-                <img src="assets/img/tecnologias/teste.png" width="150" height="150" alt="habilidade">
-            </h3>
-            <!-- Portfolio Grid Items-->
-            <div class="row justify-content-center">
-                <!-- Portfolio Item 1-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
-                        <h1 class="text-white text-center pt-3">Rola Dados</h1>
+            <div class="row g-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="about-card p-4 rounded-4">
+                        <p class="lead mb-3">
+                            Durante minha formação técnica na <strong>Etec</strong>, adquiri conhecimentos sobre os
+                            princípios de Programação Orientada a Objetos (POO) e lógica de programação. Nesse período,
+                            desenvolvi projetos utilizando C#, tecnologias web (PHP, HTML, CSS e JavaScript) e
+                            aplicações mobile com React Native.
+                        </p>
+                        <p class="lead mb-3">
+                            Na graduação, aprofundei e ampliei esses conhecimentos, estudando temas como
+                            <strong>Engenharia de Software</strong>, <strong>Large Language Models (LLMs)</strong> e
+                            <strong>Machine Learning</strong>. Também realizei um estágio na <strong>Avanade</strong>,
+                            onde participei de um treinamento intensivo em Java (Spring Boot) e Angular, ministrado
+                            pela Impacta.
+                        </p>
+                        <p class="lead mb-0">
+                            Após essa etapa, ainda durante o estágio, tive experiência prática voltada para
+                            <strong>Inteligência Artificial</strong> e processos de aceleração, explorando
+                            funcionalidades, possibilidades de uso e estratégias para contornar limitações dessas
+                            tecnologias. Atuei em conjunto com um time focado em <strong>agentes inteligentes e
+                            MCPs</strong>, além de desenvolver habilidades relacionadas ao trabalho com clientes e
+                            adquirir experiência prática sobre a atuação de um desenvolvedor no mercado de trabalho.
+                        </p>
                     </div>
                 </div>
-                <!-- Portfolio Item 2-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/quiz.png" alt="..." />
-                        <h1 class="text-white text-center pt-3">Quiz Natura</h1>
+                <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-grid">
+                        <div class="tech-item"><i class="fab fa-java"></i><span>Java</span></div>
+                        <div class="tech-item"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+                        <div class="tech-item"><i class="fab fa-react"></i><span>React</span></div>
+                        <div class="tech-item"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+                        <div class="tech-item"><i class="fas fa-leaf"></i><span>Spring</span></div>
+                        <div class="tech-item"><i class="fab fa-angular"></i><span>Angular</span></div>
+                        <div class="tech-item"><i class="fas fa-database"></i><span>SQL Server</span></div>
+                        <div class="tech-item"><i class="fab fa-php"></i><span>PHP</span></div>
+                        <div class="tech-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/stonks.png" alt="..." />
-                        <h1 class="text-white text-center pt-3">Stonks </h1>
-                    </div>
-                </div>
-
-                <h3 class="page-section text-center text-uppercase text-secondary mb-0" id="ReactNative">
-                    <img src="assets/img/tecnologias/React.png" width="150" height="150" alt="habilidade">
-                </h3>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-
-                   <!-- aqui -->
-                   <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-4 mb-5 mx-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal"
-                            data-bs-target="#portfolioModal9">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/IconeLogo.png" alt="..." />
-                            <h1 class="text-white text-center pt-3">Healthy Vibes</h1>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-5 mx-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal"
-                            data-bs-target="#portfolioModal10">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/logoJuntaPecaRoxoV2.png" alt="..."
-                                height="50rem" />
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <h1 class="text-white text-center pt-3">Junta Peça</h1>
-                        </div>
-                    </div>
-
-                    <h3 class="page-section text-center text-uppercase text-secondary mb-0" id="Web">
-                        <img src="assets/img/tecnologias/Web.png" width="150" height="150" alt="habilidade">
-                    </h3>
-                    <!-- Portfolio Grid Items-->
-                    <div class="row justify-content-center">
-                        <!-- Portfolio Item 1-->
-                        <div class="col-md-6 col-lg-4 mb-5">
-                            <div class="portfolio-item mx-auto" data-bs-toggle="modal"
-                                data-bs-target="#portfolioModal6">
-                                <div
-                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i
-                                            class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/RPG_Site.png" alt="..." />
-                                <h1 class="text-white text-center pt-3">RPG Site</h1>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item 2-->
-                        <div class="col-md-6 col-lg-4 mb-5">
-                            <div class="portfolio-item mx-auto" data-bs-toggle="modal"
-                                data-bs-target="#portfolioModal7">
-                                <div
-                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i
-                                            class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/JogoDasBolinhas.png" alt="..." />
-                                <h1 class="text-white text-center pt-3">Jogo das Bolinhas</h1>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item 2-->
-                        <div class="col-md-6 col-lg-4 mb-5">
-                            <div class="portfolio-item mx-auto" data-bs-toggle="modal"
-                                data-bs-target="#portfolioModal8">
-                                <div
-                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i
-                                            class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/Login.png" alt="..." />
-                                <h1 class="text-white text-center pt-3">Login com PHP</h1>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    </div>
-
-                </div>
-            </div>
-
-    </section>
-    <!-- About Section-->
-    <section class="page-section bg-primary text-white mb-0" id="about">
-        <div class="container">
-            <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">Sobre</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fa-brands fa-jedi-order"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- About Section Content-->
-            <div class="row">
-                <div class="col-lg-4 ms-auto">
-                    <p class="lead">Estudei 3 anos na Etec de Guarulhos, e aumentei meu interesse pela área, procuro
-                        melhorar cada vez mais tanto como pessoa tanto como programador.</p>
-                </div>
-                <div class="col-lg-4 me-auto">
-                    <p class="lead">Desde de criança me interessava por tecnologias, buscava entende-las até onde podia.
-                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- formacao Section-->
-    <section class="page-section" id="formacao">
+
+    <!-- Portfolio Section -->
+    <section class="section-padding bg-darker" id="portfolio">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-white">Formação</h2>
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fa-brands fa-jedi-order"></i></div>
-                <div class="divider-custom-line"></div>
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-label text-accent"><i class="fas fa-code me-2"></i>Portfólio</span>
+                <h2 class="section-title display-5 fw-bold mt-2">Projetos Pessoais</h2>
+                <div class="section-divider mx-auto"></div>
             </div>
 
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5 pt-3 text-white rounded borda">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Etec de Guarulhos</h3>
-                    <div class="subheading mb-3">Técnico &emsp;M-Tec</div>
-                    <div>Desenvolvimento de Sistemas</div>
+            <!-- Filter Buttons -->
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="filter-buttons d-inline-flex gap-2 flex-wrap justify-content-center">
+                    <button class="btn btn-filter active" data-filter="all">Todos</button>
+                    <button class="btn btn-filter" data-filter="csharp">C#</button>
+                    <button class="btn btn-filter" data-filter="react-node">React + Node.js</button>
+                    <button class="btn btn-filter" data-filter="web">Web</button>
+                    <button class="btn btn-filter" data-filter="python">Python</button>
                 </div>
-                <div class="flex-shrink-0"><span class="text-primary">Janeiro 2019 - Dezembro 2021</span></div>
             </div>
 
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5 pt-3 text-white rounded borda">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Fatec Zona Leste</h3>
-                    <div class="subheading mb-3">Nível Superior</div>
-                    <div>Desenvolvimento de Software Multiplataforma</div>
+            <!-- Portfolio Grid -->
+            <div class="row g-4" id="portfolioGrid">
+                <!-- C# Projects -->
+                <div class="col-md-6 col-lg-4 portfolio-card" data-category="csharp" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/cabin.png" alt="Rola Dados" loading="lazy" />
+                            <div class="project-overlay">
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tech">C# / Windows Forms</span>
+                            <h3 class="project-name">Rola Dados</h3>
+                            <p class="project-desc">Sorteia números aleatórios em dados de RPG</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex-shrink-0"><span class="text-primary">Janeiro 2022 - Corrente</span></div>
+
+                <div class="col-md-6 col-lg-4 portfolio-card" data-category="csharp" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/quiz.png" alt="Quiz Natura" loading="lazy" />
+                            <div class="project-overlay">
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tech">C# / Windows Forms</span>
+                            <h3 class="project-name">Quiz Natura</h3>
+                            <p class="project-desc">Quiz interativo com identidade visual</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 portfolio-card" data-category="csharp" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/stonks.png" alt="Stonks" loading="lazy" />
+                            <div class="project-overlay">
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tech">C# / Windows Forms</span>
+                            <h3 class="project-name">Stonks</h3>
+                            <p class="project-desc">Calculadora de investimentos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- React Native Projects -->
+                <div class="col-md-6 col-lg-4 portfolio-card" data-category="react-node" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#portfolioModal9">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/IconeLogo.png" alt="Healthy Vibes" loading="lazy" />
+                            <div class="project-overlay">
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tech">React / Node.js / TypeScript</span>
+                            <h3 class="project-name">Healthy Vibes</h3>
+                            <p class="project-desc">Plataforma de vida saudável</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 portfolio-card" data-category="react-node" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#portfolioModal10">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/logoJuntaPecaRoxoV2.png" alt="Junta Peça" loading="lazy" />
+                            <div class="project-overlay">
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tech">React / Node.js / TypeScript</span>
+                            <h3 class="project-name">Junta Peça</h3>
+                            <p class="project-desc">Ajuda a montar computadores</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Projects -->
+                <div class="col-md-6 col-lg-4 portfolio-card" data-category="web" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/RPG_Site.png" alt="RPG Site" loading="lazy" />
+                            <div class="project-overlay">
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tech">Laravel / PHP</span>
+                            <h3 class="project-name">RPG Site</h3>
+                            <p class="project-desc">Site de RPG de mesa com Laravel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 portfolio-card" data-category="web" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/JogoDasBolinhas.png" alt="Jogo das Bolinhas"
+                                loading="lazy" />
+                            <div class="project-overlay">
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tech">JavaScript</span>
+                            <h3 class="project-name">Jogo das Bolinhas</h3>
+                            <p class="project-desc">Jogo interativo feito em JS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 portfolio-card" data-category="web" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#portfolioModal8">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio/Login.png" alt="Login com PHP" loading="lazy" />
+                            <div class="project-overlay">
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tech">PHP / MySQL</span>
+                            <h3 class="project-name">Login com PHP</h3>
+                            <p class="project-desc">Sistema de login com banco de dados</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python Projects -->
+                <div class="col-md-6 col-lg-4 portfolio-card" data-category="python" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#portfolioModal11">
+                        <div class="project-image">
+                            <div class="project-image-icon d-flex align-items-center justify-content-center h-100">
+                                <i class="fab fa-python" style="font-size: 5rem; color: var(--accent); opacity: .6;"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tech">Python / TensorFlow / spaCy</span>
+                            <h3 class="project-name">Comparador AprovaQuiz</h3>
+                            <p class="project-desc">NLP para classificar questões por matéria</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Footer-->
-    <footer class="footer text-center" id="contato">
+
+    <!-- Organization Projects Section -->
+    <section class="section-padding" id="org-projects">
         <div class="container">
-            <div class="row">
-                <!-- Footer Social Icons-->
-                <div class="col-lg-7 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Redes Socias</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/DaltonGuima"><i
-                            class="fab fa-fw fa-github"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1"
-                        href="https://www.linkedin.com/in/dalton-joaquim-soares-guimar%C3%A3es-13a897231/"><i
-                            class="fab fa-fw fa-linkedin-in"></i></a>
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-label text-accent"><i class="fas fa-users me-2"></i>Organizações</span>
+                <h2 class="section-title display-5 fw-bold mt-2">Projetos em Equipe</h2>
+                <div class="section-divider mx-auto"></div>
+                <p class="text-muted mt-3 lead">Projetos desenvolvidos em conjunto dentro de organizações do GitHub</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- AprovaQuiz -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="org-card h-100">
+                        <div class="org-card-header">
+                            <img src="https://avatars.githubusercontent.com/u/163213250?s=200&v=4" alt="AprovaQuiz"
+                                class="org-avatar" />
+                            <div>
+                                <h3 class="org-name mb-1">Aprova Quiz</h3>
+                                <span class="org-badge">Projeto Integrador — Fatec ZL</span>
+                            </div>
+                        </div>
+                        <p class="org-description">
+                            Plataforma educacional de quizzes para auxiliar estudantes na preparação para vestibulares
+                            e provas. Desenvolvida como Projeto Integrador do 6º semestre da Fatec Zona Leste com
+                            foco em aprendizado interativo.
+                        </p>
+                        <div class="org-tech-stack">
+                            <span class="org-tech-badge"><i class="fab fa-react me-1"></i>React</span>
+                            <span class="org-tech-badge"><i class="fab fa-node-js me-1"></i>Node.js</span>
+                            <span class="org-tech-badge"><i class="fab fa-js me-1"></i>TypeScript</span>
+                            <span class="org-tech-badge"><i class="fas fa-server me-1"></i>REST API</span>
+                        </div>
+                        <div class="org-repos mt-3">
+                            <h6 class="text-muted mb-2"><i class="fas fa-folder-open me-1"></i>Repositórios</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="https://github.com/AprovaQuiz/FrontAprovaQuiz" target="_blank" rel="noopener"
+                                    class="repo-link">
+                                    <i class="fab fa-github me-1"></i>Front-End
+                                </a>
+                                <a href="https://github.com/AprovaQuiz/AprovaQuiz-REST-API" target="_blank"
+                                    rel="noopener" class="repo-link">
+                                    <i class="fab fa-github me-1"></i>REST API
+                                </a>
+                                <a href="https://github.com/AprovaQuiz/WebPageAprovaQuiz" target="_blank" rel="noopener"
+                                    class="repo-link">
+                                    <i class="fab fa-github me-1"></i>Web Page
+                                </a>
+                            </div>
+                        </div>
+                        <div class="org-footer mt-3">
+                            <a href="https://github.com/AprovaQuiz" target="_blank" rel="noopener"
+                                class="btn btn-sm btn-outline-accent">
+                                <i class="fab fa-github me-2"></i>Ver Organização
+                            </a>
+                            <a href="https://aprovaquiz.pages.dev/" target="_blank" rel="noopener"
+                                class="btn btn-sm btn-accent">
+                                <i class="fas fa-external-link-alt me-2"></i>Visitar Site
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <!-- Footer About Text-->
-                <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">Email para contato</h4>
-                    <p class="lead mb-0">
-                        <i class="fa-solid fa-envelope"></i>
-                        &ensp;dalton.guimaraes500@gmail.com
-                    </p>
+
+                <!-- Orvian Travel -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="org-card h-100">
+                        <div class="org-card-header">
+                            <img src="https://avatars.githubusercontent.com/u/218777610?s=200&v=4" alt="Orvian Travel"
+                                class="org-avatar" />
+                            <div>
+                                <h3 class="org-name mb-1">Orvian Travel</h3>
+                                <span class="org-badge">Decola Tech 6 — #GoOrange</span>
+                            </div>
+                        </div>
+                        <p class="org-description">
+                            Agência de viagens digital e inovadora, desenvolvida como projeto full stack no programa
+                            Decola Tech 6. Plataforma completa para planejamento e reserva de viagens com deploy na
+                            Azure Cloud.
+                        </p>
+                        <div class="org-tech-stack">
+                            <span class="org-tech-badge"><i class="fas fa-leaf me-1"></i>Spring Boot</span>
+                            <span class="org-tech-badge"><i class="fab fa-angular me-1"></i>Angular</span>
+                            <span class="org-tech-badge"><i class="fas fa-database me-1"></i>SQL Server</span>
+                            <span class="org-tech-badge"><i class="fab fa-microsoft me-1"></i>Azure</span>
+                        </div>
+                        <div class="org-repos mt-3">
+                            <h6 class="text-muted mb-2"><i class="fas fa-folder-open me-1"></i>Repositórios</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="https://github.com/Orvian-Travel/RESTAPI_Orvian" target="_blank"
+                                    rel="noopener" class="repo-link">
+                                    <i class="fab fa-github me-1"></i>REST API
+                                </a>
+                                <a href="https://github.com/Orvian-Travel/angular-orvian-travel" target="_blank"
+                                    rel="noopener" class="repo-link">
+                                    <i class="fab fa-github me-1"></i>Front-End
+                                </a>
+                                <a href="https://github.com/Orvian-Travel/SQL_Orvian" target="_blank" rel="noopener"
+                                    class="repo-link">
+                                    <i class="fab fa-github me-1"></i>Database
+                                </a>
+                            </div>
+                        </div>
+                        <div class="org-footer mt-3">
+                            <a href="https://github.com/Orvian-Travel" target="_blank" rel="noopener"
+                                class="btn btn-sm btn-outline-accent">
+                                <i class="fab fa-github me-2"></i>Ver Organização
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section-padding" id="experiencias">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-label text-accent"><i class="fas fa-briefcase me-2"></i>Experiências</span>
+                <h2 class="section-title display-5 fw-bold mt-2">Trajetória Profissional</h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                            <div>
+                                <h3 class="fw-bold mb-1">Avanade</h3>
+                                <span class="text-accent fw-500">Associate Developer Full Stack</span>
+                                <p class="mb-0 mt-1">Desenvolvimento full stack com tecnologias Microsoft e práticas ágeis, atuando em projetos de transformação digital.</p>
+                            </div>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar-alt me-1"></i>Atual
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                            <div>
+                                <h3 class="fw-bold mb-1">Konecta Brazil</h3>
+                                <span class="text-accent fw-500">OP Call</span>
+                                <p class="mb-0 mt-1">Atendimento e suporte ao cliente.</p>
+                            </div>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar-alt me-1"></i>3 meses
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section-padding bg-darker" id="formacao">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-label text-accent"><i class="fas fa-graduation-cap me-2"></i>Formação</span>
+                <h2 class="section-title display-5 fw-bold mt-2">Educação</h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                            <div>
+                                <h3 class="fw-bold mb-1">Fatec Zona Leste</h3>
+                                <span class="text-accent fw-500">Nível Superior</span>
+                                <p class="mb-0 mt-1">Desenvolvimento de Software Multiplataforma</p>
+                            </div>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar-alt me-1"></i>Jan 2022 — Atual
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                            <div>
+                                <h3 class="fw-bold mb-1">Etec de Guarulhos</h3>
+                                <span class="text-accent fw-500">Técnico — M-Tec</span>
+                                <p class="mb-0 mt-1">Desenvolvimento de Sistemas</p>
+                            </div>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar-alt me-1"></i>Jan 2019 — Dez 2021
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section-padding" id="certificacoes">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-label text-accent"><i class="fas fa-certificate me-2"></i>Certificações</span>
+                <h2 class="section-title display-5 fw-bold mt-2">Cursos & Certificações</h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Azure AI Fundamentals -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://learn.microsoft.com/en-us/users/daltonguimares-3859/credentials/826f2aa46f916531" target="_blank" rel="noopener" class="cert-card text-center d-block">
+                        <div class="cert-icon mb-3">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Azure AI Fundamentals</h5>
+                        <span class="cert-issuer">Microsoft</span>
+                        <p class="cert-date mt-2 mb-0"><i class="far fa-calendar-alt me-1"></i>Ago 2025</p>
+                    </a>
+                </div>
+
+                <!-- AWS Cloud Foundations -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://www.credly.com/badges/a3c4a0db-05e9-4b6a-8c13-b6d053418406/linked_in_profile" target="_blank" rel="noopener" class="cert-card text-center d-block">
+                        <div class="cert-icon mb-3">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Cloud Foundations</h5>
+                        <span class="cert-issuer">AWS Academy</span>
+                        <p class="cert-date mt-2 mb-0"><i class="far fa-calendar-alt me-1"></i>Out 2024</p>
+                    </a>
+                </div>
+
+                <!-- Google Cloud Skills -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://www.skills.google/public_profiles/deaa0d4f-e324-4390-b72c-fe0b8a9a735f" target="_blank" rel="noopener" class="cert-card text-center d-block">
+                        <div class="cert-icon mb-3">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Cloud Skills Boost</h5>
+                        <span class="cert-issuer">Google Cloud — Silver League</span>
+                        <p class="cert-date mt-2 mb-0"><i class="far fa-calendar-alt me-1"></i>Abr 2024</p>
+                    </a>
+                </div>
+
+                <!-- Cisco Cybersecurity -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <a href="https://www.credly.com/badges/bac71ecb-b9eb-48ad-97ae-f768ddd65802?source=linked_in_profile" target="_blank" rel="noopener" class="cert-card text-center d-block">
+                        <div class="cert-icon mb-3">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Intro to Cybersecurity</h5>
+                        <span class="cert-issuer">Cisco</span>
+                        <p class="cert-date mt-2 mb-0"><i class="far fa-calendar-alt me-1"></i>Abr 2021</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding" id="contato">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-label text-accent"><i class="fas fa-paper-plane me-2"></i>Contato</span>
+                <h2 class="section-title display-5 fw-bold mt-2">Vamos conversar</h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://github.com/DaltonGuima" target="_blank" rel="noopener" class="contact-card">
+                        <i class="fab fa-github contact-icon"></i>
+                        <h5>GitHub</h5>
+                        <p class="text-muted mb-0">@DaltonGuima</p>
+                    </a>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://www.linkedin.com/in/dalton-joaquim-soares-guimar%C3%A3es-13a897231/"
+                        target="_blank" rel="noopener" class="contact-card">
+                        <i class="fab fa-linkedin-in contact-icon"></i>
+                        <h5>LinkedIn</h5>
+                        <p class="text-muted mb-0">Dalton Guimarães</p>
+                    </a>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <a href="mailto:dalton.guimaraes500@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <h5>Email</h5>
+                        <p class="text-muted mb-0">dalton.guimaraes500@gmail.com</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container text-center">
+            <a href="#page-top" class="btn btn-accent btn-sm rounded-circle mb-3 scroll-top"
+                aria-label="Voltar ao topo">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+            <p class="mb-0 text-muted">
+                &copy; 2026 Dalton Guimarães. Feito com <i class="fas fa-heart text-accent"></i> e muito código.
+            </p>
         </div>
     </footer>
-    <!-- Copyright Section-->
-    <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright &copy; Dalton Guimarães 2024</small></div>
-    </div>
-    <!-- Portfolio Modals-->
-    <!-- Portfolio Modal 1-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Rola Dados</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom rounded bg-secondary">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fa-brands fa-jedi-order"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <video class="img-fluid rounded mb-5"
-                                    src="/assets/video/Dados 2022-08-29 14-37-12_Trim.mp4" controls width="900"
-                                    height="650" muted></video>
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">É um projeto feito em Windows Forms, que utiliza conceitos de orientado
-                                    a objetos, para sortear um número aleatório em dados de rpg</p>
 
-                                <a href="https://github.com/DaltonGuima/Dice-Roller">
-                                    <button class="btn btn-primary col-md-8" data-bs-dismiss="modal">
-                                        <i class="fab fa-fw fa-github"></i>
-                                        Link github
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Portfolio Modals -->
+    <!-- Modal 1 - Rola Dados -->
+    <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="portfolioModal1Label">Rola Dados</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <video class="img-fluid rounded mb-4" src="assets/video/Dados 2022-08-29 14-37-12_Trim.mp4"
+                        controls muted style="max-height: 400px;"></video>
+                    <p class="text-muted">Projeto feito em Windows Forms que utiliza conceitos de orientação a objetos
+                        para sortear um número aleatório em dados de RPG.</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <a href="https://github.com/DaltonGuima/Dice-Roller" target="_blank" rel="noopener"
+                        class="btn btn-accent"><i class="fab fa-github me-2"></i>Ver no GitHub</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Portfolio Modal 2-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2 "
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Quiz Natura</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom rounded bg-secondary">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fa-brands fa-jedi-order"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <video class="img-fluid rounded mb-5" src="/assets/video/Quiz_Natura.mp4" controls
-                                    width="900" height="650" muted></video>
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">É um projeto quiz, feito usando windows forms, usei algumas ferramentas
-                                    para deixar uma boa identidade visual.</p>
 
-                                <a href="https://github.com/DaltonGuima/Quiz_Natura">
-                                    <button class="btn btn-primary col-md-8" data-bs-dismiss="modal">
-                                        <i class="fab fa-fw fa-github"></i>
-                                        Link github
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Modal 2 - Quiz Natura -->
+    <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="portfolioModal2Label">Quiz Natura</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <video class="img-fluid rounded mb-4" src="assets/video/Quiz_Natura.mp4" controls muted
+                        style="max-height: 400px;"></video>
+                    <p class="text-muted">Quiz interativo feito em Windows Forms com boa identidade visual.</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <a href="https://github.com/DaltonGuima/Quiz_Natura" target="_blank" rel="noopener"
+                        class="btn btn-accent"><i class="fab fa-github me-2"></i>Ver no GitHub</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Portfolio Modal 3-->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Stonks
-                                    Investimentos</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom rounded bg-secondary">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fa-brands fa-jedi-order"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <video class="img-fluid rounded mb-5" src="/assets/video/Stonks.mp4" controls
-                                    width="900" height="650" muted></video>
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Este programa calcula investimentos ao longo do tempo, os dados usados
-                                    são de 2019.</p>
 
-                                <a href="https://github.com/DaltonGuima/Stonks">
-                                    <button class="btn btn-primary col-md-8" data-bs-dismiss="modal">
-                                        <i class="fab fa-fw fa-github"></i>
-                                        Link github
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Modal 3 - Stonks -->
+    <div class="modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="portfolioModal3Label">Stonks Investimentos</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <video class="img-fluid rounded mb-4" src="assets/video/Stonks.mp4" controls muted
+                        style="max-height: 400px;"></video>
+                    <p class="text-muted">Programa que calcula investimentos ao longo do tempo com dados de 2019.</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <a href="https://github.com/DaltonGuima/Stonks" target="_blank" rel="noopener"
+                        class="btn btn-accent"><i class="fab fa-github me-2"></i>Ver no GitHub</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Portfolio Modal 6-->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">RPG Site</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom rounded bg-secondary">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fa-brands fa-jedi-order"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <video class="img-fluid rounded mb-5"
-                                    src="/assets/video/Home - Opera 2022-04-11 15-25-18.mp4" controls width="900"
-                                    height="650"></video>
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">É um projeto, ainda não finalizado, que comecei para melhorar
-                                    conhecimentos no front end, envolendo rpg de mesa, ele é em parte feito com Laravel
-                                </p>
 
-                                <a href="https://github.com/DaltonGuima/rpg_site">
-                                    <button class="btn btn-primary col-md-8" data-bs-dismiss="modal">
-                                        <i class="fab fa-fw fa-github"></i>
-                                        Link github
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Modal 6 - RPG Site -->
+    <div class="modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="portfolioModal6Label">RPG Site</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <video class="img-fluid rounded mb-4" src="assets/video/Home - Opera 2022-04-11 15-25-18.mp4"
+                        controls style="max-height: 400px;"></video>
+                    <p class="text-muted">Projeto envolvendo RPG de mesa, feito em parte com Laravel para melhorar
+                        conhecimentos no front-end.</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <a href="https://github.com/DaltonGuima/rpg_site" target="_blank" rel="noopener"
+                        class="btn btn-accent"><i class="fab fa-github me-2"></i>Ver no GitHub</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Portfolio Modal 7 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jogo das Bolinhas
-                                </h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom rounded bg-secondary">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fa-brands fa-jedi-order"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <video class="img-fluid rounded mb-5" src="/assets/video/JogoDasBolinhas.mp4" controls
-                                    width="900" height="650" muted></video>
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Um jogo feito em JS.</p>
 
-                                <a href="https://github.com/DaltonGuima/Game-with-javascript">
-                                    <button class="btn btn-primary col-md-8" data-bs-dismiss="modal">
-                                        <i class="fab fa-fw fa-github"></i>
-                                        Link github
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Modal 7 - Jogo das Bolinhas -->
+    <div class="modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="portfolioModal7Label">Jogo das Bolinhas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <video class="img-fluid rounded mb-4" src="assets/video/JogoDasBolinhas.mp4" controls muted
+                        style="max-height: 400px;"></video>
+                    <p class="text-muted">Jogo interativo desenvolvido em JavaScript.</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <a href="https://github.com/DaltonGuima/Game-with-javascript" target="_blank" rel="noopener"
+                        class="btn btn-accent"><i class="fab fa-github me-2"></i>Ver no GitHub</a>
                 </div>
             </div>
         </div>
     </div>
-    <!--  Portfolio Modal 8 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal8"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Login com PHP</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom rounded bg-secondary">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fa-brands fa-jedi-order"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <video class="img-fluid rounded mb-5" src="/assets/video/LoginPHP.mp4" controls
-                                    width="900" height="650" muted></video>
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Um sistema de login feito com PHP, com conexão com banco de dados.</p>
 
-                                <a href="https://github.com/DaltonGuima/Login-system">
-                                    <button class="btn btn-primary col-md-8" data-bs-dismiss="modal">
-                                        <i class="fab fa-fw fa-github"></i>
-                                        Link github
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Modal 8 - Login com PHP -->
+    <div class="modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal8Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="portfolioModal8Label">Login com PHP</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <video class="img-fluid rounded mb-4" src="assets/video/LoginPHP.mp4" controls muted
+                        style="max-height: 400px;"></video>
+                    <p class="text-muted">Sistema de login feito com PHP e conexão com banco de dados.</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <a href="https://github.com/DaltonGuima/Login-system" target="_blank" rel="noopener"
+                        class="btn btn-accent"><i class="fab fa-github me-2"></i>Ver no GitHub</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" aria-labelledby="portfolioModal9"
+
+    <!-- Modal 9 - Healthy Vibes -->
+    <div class="modal fade" id="portfolioModal9" tabindex="-1" aria-labelledby="portfolioModal9Label"
         aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Healthy Vibes</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom rounded bg-secondary">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fa-brands fa-jedi-order"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/HealthyVibesHome.png"
-                                    width="900" height="650" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Uma plataforma tanto mobile, quanto Web, feita para auxiliar uma vida
-                                    mais saudável, com ajuda na alimentação e recomendação de exercícios.</p>
-
-                                <a href="https://github.com/lucasalbuquerque57/Healthy-Vibes-FrontEnd">
-                                    <button class="btn btn-primary col-md-8" data-bs-dismiss="modal">
-                                        <i class="fab fa-fw fa-github"></i>
-                                        Link github
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="portfolioModal9Label">Healthy Vibes</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img class="img-fluid rounded mb-4" src="assets/img/portfolio/HealthyVibesHome.png"
+                        alt="Healthy Vibes" style="max-height: 400px;" />
+                    <p class="text-muted">Plataforma mobile e web para auxiliar uma vida mais saudável, com ajuda na
+                        alimentação e recomendação de exercícios.</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <a href="https://github.com/lucasalbuquerque57/Healthy-Vibes-FrontEnd" target="_blank"
+                        rel="noopener" class="btn btn-accent"><i class="fab fa-github me-2"></i>Ver no GitHub</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" aria-labelledby="portfolioModal10"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Junta Peça</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom rounded bg-secondary">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fa-brands fa-jedi-order"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/HomeJunta.png" width="900"
-                                    height="650" />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4"> Uma plataforma para ajudar a montar computadores, pesquisando lojas e
-                                    explicando como montar corretamente.</p>
 
-                                <a href="https://github.com/DaltonGuima/PC_Maker">
-                                    <button class="btn btn-primary col-md-8" data-bs-dismiss="modal">
-                                        <i class="fab fa-fw fa-github"></i>
-                                        Link github
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Modal 10 - Junta Peça -->
+    <div class="modal fade" id="portfolioModal10" tabindex="-1" aria-labelledby="portfolioModal10Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="portfolioModal10Label">Junta Peça</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img class="img-fluid rounded mb-4" src="assets/img/portfolio/HomeJunta.png" alt="Junta Peça"
+                        style="max-height: 400px;" />
+                    <p class="text-muted">Plataforma para ajudar a montar computadores, pesquisando lojas e explicando
+                        como montar corretamente.</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <a href="https://github.com/DaltonGuima/PC_Maker" target="_blank" rel="noopener"
+                        class="btn btn-accent"><i class="fab fa-github me-2"></i>Ver no GitHub</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+
+    <!-- Modal 11 - Comparador AprovaQuiz -->
+    <div class="modal fade" id="portfolioModal11" tabindex="-1" aria-labelledby="portfolioModal11Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="portfolioModal11Label">Comparador AprovaQuiz</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="p-4 mb-4 rounded" style="background: var(--bg-card);">
+                        <i class="fab fa-python mb-3" style="font-size: 4rem; color: var(--accent);"></i>
+                    </div>
+                    <p class="text-muted">Projeto de Machine Learning e Processamento de Linguagem Natural (NLP)
+                        desenvolvido como parte do AprovaQuiz. Utiliza redes neurais LSTM bidirecionais com TensorFlow/Keras
+                        e lematização com spaCy para comparar questões e identificar a qual matéria possuem maior
+                        similaridade, usando cosine similarity entre embeddings.</p>
+                    <div class="mt-3">
+                        <span class="org-tech-badge me-1"><i class="fab fa-python me-1"></i>Python</span>
+                        <span class="org-tech-badge me-1"><i class="fas fa-brain me-1"></i>TensorFlow/Keras</span>
+                        <span class="org-tech-badge me-1"><i class="fas fa-language me-1"></i>spaCy NLP</span>
+                        <span class="org-tech-badge"><i class="fas fa-chart-line me-1"></i>Cosine Similarity</span>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <a href="https://colab.research.google.com/drive/1pofDVdPCzQQL9Hm9-TolsL5itHVaGXDN" target="_blank" rel="noopener"
+                        class="btn btn-accent"><i class="fas fa-external-link-alt me-2"></i>Ver no Google Colab</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- Custom JS -->
     <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/formacao-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
 </html>

@@ -1,54 +1,142 @@
-/*!
-* Start Bootstrap - Freelancer v7.0.6 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2022 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
+/* ===================================================
+   Dalton Guimarães — Portfolio Scripts
+   =================================================== */
 
-window.addEventListener('DOMContentLoaded', event => {
+document.addEventListener('DOMContentLoaded', () => {
+    // ---- AOS Init ----
+    AOS.init({
+        duration: 700,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 80,
+    });
 
-    // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
-
+    // ---- Navbar scroll effect ----
+    const nav = document.getElementById('mainNav');
+    const handleScroll = () => {
+        if (!nav) return;
+        nav.classList.toggle('scrolled', window.scrollY > 50);
     };
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
-    // Shrink the navbar 
-    navbarShrink();
+    // ---- Custom ScrollSpy (manual) ----
+    const navLinks = document.querySelectorAll('#mainNav .nav-link');
+    const sections = [];
+    navLinks.forEach(link => {
+        const id = link.getAttribute('href');
+        if (id && id.startsWith('#')) {
+            const section = document.querySelector(id);
+            if (section) sections.push({ el: section, link });
+        }
+    });
 
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
+    function updateActiveNav() {
+        const scrollY = window.scrollY;
+        const navHeight = nav ? nav.offsetHeight : 70;
+        let current = null;
 
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 72,
-        });
-    };
+        for (const { el, link } of sections) {
+            const top = el.offsetTop - navHeight - 80;
+            if (scrollY >= top) {
+                current = link;
+            }
+        }
 
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
+        navLinks.forEach(l => l.classList.remove('active'));
+        if (current) current.classList.add('active');
+    }
+
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    updateActiveNav();
+
+    // ---- Collapse navbar on link click (mobile) ----
+    const toggler = document.querySelector('.navbar-toggler');
+    document.querySelectorAll('#navbarResponsive .nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            if (toggler && window.getComputedStyle(toggler).display !== 'none') {
+                toggler.click();
             }
         });
     });
 
+    // ---- Typing Animation ----
+    const phrases = [
+        'Full Stack Developer',
+        'Spring Boot & Angular',
+        'React Native',
+        'Sempre aprendendo...',
+        'Clean Code enthusiast',
+    ];
+    const typingEl = document.getElementById('typingText');
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+    const TYPE_SPEED = 80;
+    const DELETE_SPEED = 40;
+    const PAUSE_END = 2000;
+    const PAUSE_START = 400;
+
+    function typeLoop() {
+        if (!typingEl) return;
+        const current = phrases[phraseIndex];
+
+        if (!deleting) {
+            typingEl.textContent = current.substring(0, charIndex + 1);
+            charIndex++;
+            if (charIndex === current.length) {
+                deleting = true;
+                setTimeout(typeLoop, PAUSE_END);
+                return;
+            }
+            setTimeout(typeLoop, TYPE_SPEED);
+        } else {
+            typingEl.textContent = current.substring(0, charIndex - 1);
+            charIndex--;
+            if (charIndex === 0) {
+                deleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                setTimeout(typeLoop, PAUSE_START);
+                return;
+            }
+            setTimeout(typeLoop, DELETE_SPEED);
+        }
+    }
+    typeLoop();
+
+    // ---- Portfolio Filter ----
+    const filterBtns = document.querySelectorAll('.btn-filter');
+    const cards = document.querySelectorAll('.portfolio-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filter = btn.dataset.filter;
+
+            cards.forEach(card => {
+                if (filter === 'all' || card.dataset.category === filter) {
+                    card.classList.remove('hide');
+                } else {
+                    card.classList.add('hide');
+                }
+            });
+        });
+    });
+
+    // ---- Smooth scroll for anchor links ----
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', e => {
+            const href = anchor.getAttribute('href');
+            if (href === '#' || href === '#page-top') return;
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                const navHeight = document.getElementById('mainNav')?.offsetHeight || 70;
+                const top = target.getBoundingClientRect().top + window.scrollY - navHeight;
+                window.scrollTo({ top, behavior: 'smooth' });
+            }
+        });
+    });
 });
